@@ -12,9 +12,9 @@ import SelfSizingWaterfallCollectionViewLayout
 
 class MESCollectionViewController: UICollectionViewController {
     
-    typealias CellFactory = CollectionViewCellFactory<MESCollectionViewCell, String>
-    typealias HeaderViewFactory = TitledCollectionReusableViewFactory<String>
-    typealias Section = CollectionViewSection<String>
+    typealias CellFactory = CollectionViewCellFactory<MESCollectionViewCell, Int>
+    typealias HeaderViewFactory = TitledCollectionReusableViewFactory<Int>
+    typealias Section = CollectionViewSection<Int>
     
     var dataSourceProvider: CollectionViewDataSourceProvider<Section, CellFactory, HeaderViewFactory>!
     var randomHeights: [Int]!
@@ -34,17 +34,16 @@ class MESCollectionViewController: UICollectionViewController {
         collectionView?.registerNib(nib, forCellWithReuseIdentifier: "ruid_cell")
         
         // 2. create sections with your model objects
-        let section0 = CollectionViewSection<String>(items: "1", "2", "3", "Five", "Six", "Seven")
-        let allSections = [section0]
+        let section0 = CollectionViewSection(randomHeights)
         
         // 3. create cell factory
-        let factory = CollectionViewCellFactory<MESCollectionViewCell, String>(reuseIdentifier: "ruid_cell") { (cell, model, collectionView, indexPath) in
-            // TODO Configure the cell's height, alright.
+        let factory = CollectionViewCellFactory<MESCollectionViewCell, String>(reuseIdentifier: "ruid_cell") { [unowned self] (cell, model, collectionView, indexPath) in
+            cell.height = self.randomHeights[indexPath.item]
             return cell
         }
         
         // 4. create data source provider
-        dataSourceProvider = CollectionViewDataSourceProvider(sections: allSections, cellFactory: factory)
+        dataSourceProvider = CollectionViewDataSourceProvider(sections: [section0], cellFactory: factory)
         
         // 5. set the table view's data source
         collectionView!.dataSource = dataSourceProvider!.dataSource
