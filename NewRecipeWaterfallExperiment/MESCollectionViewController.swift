@@ -16,10 +16,14 @@ class MESCollectionViewController: UICollectionViewController {
     typealias HeaderViewFactory = TitledCollectionReusableViewFactory<String>
     typealias Section = CollectionViewSection<String>
     
-    var dataSourceProvider: CollectionViewDataSourceProvider<Section, CellFactory, HeaderViewFactory>?
+    var dataSourceProvider: CollectionViewDataSourceProvider<Section, CellFactory, HeaderViewFactory>!
+    var randomHeights: [Int]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // -1. set up a model of random heights!
+        randomHeights = (1...30).map{_ in Int(300 + arc4random_uniform(600)) } // 300..900
         
         // 0. set up the number of columns in SelfSizing etc.etc.
         let layout = collectionView!.collectionViewLayout as! SelfSizingWaterfallCollectionViewLayout
