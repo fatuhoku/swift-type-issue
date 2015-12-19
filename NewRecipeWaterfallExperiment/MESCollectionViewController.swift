@@ -8,6 +8,7 @@
 
 import UIKit
 import JSQDataSourcesKit
+import SelfSizingWaterfallCollectionViewLayout
 
 class MESCollectionViewController: UICollectionViewController {
     
@@ -20,12 +21,16 @@ class MESCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // 0. set up the number of columns in SelfSizing etc.etc.
+        let layout = collectionView!.collectionViewLayout as! SelfSizingWaterfallCollectionViewLayout
+        layout.numberOfColumns = 3
+        
         // 1. register cells
         let nib = UINib(nibName: "CollectionViewCell", bundle: nil)
         collectionView?.registerNib(nib, forCellWithReuseIdentifier: "ruid_cell")
         
         // 2. create sections with your model objects
-        let section0 = CollectionViewSection<String>(items: "1", "2", "3")
+        let section0 = CollectionViewSection<String>(items: "1", "2", "3", "Five", "Six", "Seven")
         let allSections = [section0]
         
         // 3. create cell factory
