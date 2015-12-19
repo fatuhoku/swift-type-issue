@@ -1,0 +1,13 @@
+PODS:
+  - JSQDataSourcesKit (3.0.1)
+  - SelfSizingWaterfallCollectionViewLayout (0.0.1)
+
+DEPENDENCIES:
+  - JSQDataSourcesKit
+  - SelfSizingWaterfallCollectionViewLayout
+
+SPEC CHECKSUMS:
+  JSQDataSourcesKit: 58f554593c043b5267406d5091aa122f8f06443d
+  SelfSizingWaterfallCollectionViewLayout: 8ea9ed8cca9f3bf8144016828a3932aaa97d0eb4
+
+COCOAPODS: 0.39.0

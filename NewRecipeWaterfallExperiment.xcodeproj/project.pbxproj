@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B4BDA551C25B89800354E5A /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B4BDA541C25B89800354E5A /* CollectionViewCell.xib */; };
+		0B4BDA571C25BBF600354E5A /* MESCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4BDA561C25BBF600354E5A /* MESCollectionViewCell.swift */; };
+		0B6572511C25B687007F9EF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6572501C25B687007F9EF4 /* AppDelegate.swift */; };
+		0B6572531C25B687007F9EF4 /* MESCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6572521C25B687007F9EF4 /* MESCollectionViewController.swift */; };
+		0B6572561C25B687007F9EF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B6572541C25B687007F9EF4 /* Main.storyboard */; };
+		0B6572581C25B687007F9EF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B6572571C25B687007F9EF4 /* Assets.xcassets */; };
+		0B65725B1C25B687007F9EF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B6572591C25B687007F9EF4 /* LaunchScreen.storyboard */; };
+		0B6572661C25B687007F9EF4 /* NewRecipeWaterfallExperimentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6572651C25B687007F9EF4 /* NewRecipeWaterfallExperimentTests.swift */; };
+		503945A28D31CC390C723560 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3D7CE6777CAE1A2219745A8 /* Pods.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0B6572621C25B687007F9EF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B6572451C25B687007F9EF4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B65724C1C25B687007F9EF4;
+			remoteInfo = NewRecipeWaterfallExperiment;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B4BDA541C25B89800354E5A /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		0B4BDA561C25BBF600354E5A /* MESCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MESCollectionViewCell.swift; sourceTree = "<group>"; };
+		0B65724D1C25B687007F9EF4 /* NewRecipeWaterfallExperiment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewRecipeWaterfallExperiment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B6572501C25B687007F9EF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0B6572521C25B687007F9EF4 /* MESCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MESCollectionViewController.swift; sourceTree = "<group>"; };
+		0B6572551C25B687007F9EF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0B6572571C25B687007F9EF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0B65725A1C25B687007F9EF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0B65725C1C25B687007F9EF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B6572611C25B687007F9EF4 /* NewRecipeWaterfallExperimentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewRecipeWaterfallExperimentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B6572651C25B687007F9EF4 /* NewRecipeWaterfallExperimentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecipeWaterfallExperimentTests.swift; sourceTree = "<group>"; };
+		0B6572671C25B687007F9EF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		365C0CA50BC1B341143170E6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		BC70FB2FD38D7670F93F7CDF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		D3D7CE6777CAE1A2219745A8 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0B65724A1C25B687007F9EF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				503945A28D31CC390C723560 /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B65725E1C25B687007F9EF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B6572441C25B687007F9EF4 = {
+			isa = PBXGroup;
+			children = (
+				0B65724F1C25B687007F9EF4 /* NewRecipeWaterfallExperiment */,
+				0B6572641C25B687007F9EF4 /* NewRecipeWaterfallExperimentTests */,
+				0B65724E1C25B687007F9EF4 /* Products */,
+				F4E14BC1929D4D20FBA8B6D4 /* Pods */,
+				B1FAB822DF445BC9067C29B7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0B65724E1C25B687007F9EF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0B65724D1C25B687007F9EF4 /* NewRecipeWaterfallExperiment.app */,
+				0B6572611C25B687007F9EF4 /* NewRecipeWaterfallExperimentTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0B65724F1C25B687007F9EF4 /* NewRecipeWaterfallExperiment */ = {
+			isa = PBXGroup;
+			children = (
+				0B6572501C25B687007F9EF4 /* AppDelegate.swift */,
+				0B4BDA541C25B89800354E5A /* CollectionViewCell.xib */,
+				0B4BDA561C25BBF600354E5A /* MESCollectionViewCell.swift */,
+				0B6572521C25B687007F9EF4 /* MESCollectionViewController.swift */,
+				0B6572541C25B687007F9EF4 /* Main.storyboard */,
+				0B6572591C25B687007F9EF4 /* LaunchScreen.storyboard */,
+				0B6572571C25B687007F9EF4 /* Assets.xcassets */,
+				0B65725C1C25B687007F9EF4 /* Info.plist */,
+			);
+			path = NewRecipeWaterfallExperiment;
+			sourceTree = "<group>";
+		};
+		0B6572641C25B687007F9EF4 /* NewRecipeWaterfallExperimentTests */ = {
+			isa = PBXGroup;
+			children = (
+				0B6572651C25B687007F9EF4 /* NewRecipeWaterfallExperimentTests.swift */,
+				0B6572671C25B687007F9EF4 /* Info.plist */,
+			);
+			path = NewRecipeWaterfallExperimentTests;
+			sourceTree = "<group>";
+		};
+		B1FAB822DF445BC9067C29B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3D7CE6777CAE1A2219745A8 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4E14BC1929D4D20FBA8B6D4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				365C0CA50BC1B341143170E6 /* Pods.debug.xcconfig */,
+				BC70FB2FD38D7670F93F7CDF /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0B65724C1C25B687007F9EF4 /* NewRecipeWaterfallExperiment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B65726A1C25B687007F9EF4 /* Build configuration list for PBXNativeTarget "NewRecipeWaterfallExperiment" */;
+			buildPhases = (
+				B81E09C7623E6DF469D05B3E /* Check Pods Manifest.lock */,
+				0B6572491C25B687007F9EF4 /* Sources */,
+				0B65724A1C25B687007F9EF4 /* Frameworks */,
+				0B65724B1C25B687007F9EF4 /* Resources */,
+				1C92CAD15E357678B8C07DFA /* Embed Pods Frameworks */,
+				46BB4C665B31501B04165E1C /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NewRecipeWaterfallExperiment;
+			productName = NewRecipeWaterfallExperiment;
+			productReference = 0B65724D1C25B687007F9EF4 /* NewRecipeWaterfallExperiment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0B6572601C25B687007F9EF4 /* NewRecipeWaterfallExperimentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B65726D1C25B687007F9EF4 /* Build configuration list for PBXNativeTarget "NewRecipeWaterfallExperimentTests" */;
+			buildPhases = (
+				0B65725D1C25B687007F9EF4 /* Sources */,
+				0B65725E1C25B687007F9EF4 /* Frameworks */,
+				0B65725F1C25B687007F9EF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B6572631C25B687007F9EF4 /* PBXTargetDependency */,
+			);
+			name = NewRecipeWaterfallExperimentTests;
+			productName = NewRecipeWaterfallExperimentTests;
+			productReference = 0B6572611C25B687007F9EF4 /* NewRecipeWaterfallExperimentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0B6572451C25B687007F9EF4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Hok Shun Poon";
+				TargetAttributes = {
+					0B65724C1C25B687007F9EF4 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					0B6572601C25B687007F9EF4 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 0B65724C1C25B687007F9EF4;
+					};
+				};
+			};
+			buildConfigurationList = 0B6572481C25B687007F9EF4 /* Build configuration list for PBXProject "NewRecipeWaterfallExperiment" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0B6572441C25B687007F9EF4;
+			productRefGroup = 0B65724E1C25B687007F9EF4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0B65724C1C25B687007F9EF4 /* NewRecipeWaterfallExperiment */,
+				0B6572601C25B687007F9EF4 /* NewRecipeWaterfallExperimentTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0B65724B1C25B687007F9EF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B65725B1C25B687007F9EF4 /* LaunchScreen.storyboard in Resources */,
+				0B6572581C25B687007F9EF4 /* Assets.xcassets in Resources */,
+				0B4BDA551C25B89800354E5A /* CollectionViewCell.xib in Resources */,
+				0B6572561C25B687007F9EF4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B65725F1C25B687007F9EF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C92CAD15E357678B8C07DFA /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46BB4C665B31501B04165E1C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B81E09C7623E6DF469D05B3E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0B6572491C25B687007F9EF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B6572531C25B687007F9EF4 /* MESCollectionViewController.swift in Sources */,
+				0B4BDA571C25BBF600354E5A /* MESCollectionViewCell.swift in Sources */,
+				0B6572511C25B687007F9EF4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B65725D1C25B687007F9EF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B6572661C25B687007F9EF4 /* NewRecipeWaterfallExperimentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0B6572631C25B687007F9EF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B65724C1C25B687007F9EF4 /* NewRecipeWaterfallExperiment */;
+			targetProxy = 0B6572621C25B687007F9EF4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0B6572541C25B687007F9EF4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B6572551C25B687007F9EF4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0B6572591C25B687007F9EF4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B65725A1C25B687007F9EF4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0B6572681C25B687007F9EF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0B6572691C25B687007F9EF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0B65726B1C25B687007F9EF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 365C0CA50BC1B341143170E6 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NewRecipeWaterfallExperiment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.makeeatsee.MakeEatSee.NewRecipeWaterfallExperiment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0B65726C1C25B687007F9EF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC70FB2FD38D7670F93F7CDF /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NewRecipeWaterfallExperiment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.makeeatsee.MakeEatSee.NewRecipeWaterfallExperiment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0B65726E1C25B687007F9EF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NewRecipeWaterfallExperimentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.makeeatsee.MakeEatSee.NewRecipeWaterfallExperimentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NewRecipeWaterfallExperiment.app/NewRecipeWaterfallExperiment";
+			};
+			name = Debug;
+		};
+		0B65726F1C25B687007F9EF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NewRecipeWaterfallExperimentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.makeeatsee.MakeEatSee.NewRecipeWaterfallExperimentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NewRecipeWaterfallExperiment.app/NewRecipeWaterfallExperiment";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B6572481C25B687007F9EF4 /* Build configuration list for PBXProject "NewRecipeWaterfallExperiment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B6572681C25B687007F9EF4 /* Debug */,
+				0B6572691C25B687007F9EF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B65726A1C25B687007F9EF4 /* Build configuration list for PBXNativeTarget "NewRecipeWaterfallExperiment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B65726B1C25B687007F9EF4 /* Debug */,
+				0B65726C1C25B687007F9EF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B65726D1C25B687007F9EF4 /* Build configuration list for PBXNativeTarget "NewRecipeWaterfallExperimentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B65726E1C25B687007F9EF4 /* Debug */,
+				0B65726F1C25B687007F9EF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0B6572451C25B687007F9EF4 /* Project object */;
+}
