@@ -44,8 +44,6 @@ class MESCollectionViewController: UICollectionViewController {
         
         // 5. set the table view's data source
         collectionView!.dataSource = dataSourceProvider!.dataSource
-        
-        NSLog("Set the data source. Let's hope self-sizing works.")
     }
 
     override func didReceiveMemoryWarning() {
