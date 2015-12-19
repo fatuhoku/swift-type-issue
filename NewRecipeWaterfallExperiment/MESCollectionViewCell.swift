@@ -9,5 +9,5 @@
 import UIKit
 
 class MESCollectionViewCell : UICollectionViewCell {
-    
+    var height: Int = 300;
 }
