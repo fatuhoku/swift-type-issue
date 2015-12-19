@@ -65,6 +65,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B4BDA581C25CA9700354E5A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0B4BDA561C25BBF600354E5A /* MESCollectionViewCell.swift */,
+				0B4BDA541C25B89800354E5A /* CollectionViewCell.xib */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		0B4BDA591C25CAA700354E5A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0B4BDA581C25CA9700354E5A /* Cell */,
+				0B6572521C25B687007F9EF4 /* MESCollectionViewController.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		0B6572441C25B687007F9EF4 = {
 			isa = PBXGroup;
 			children = (
@@ -89,9 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				0B6572501C25B687007F9EF4 /* AppDelegate.swift */,
-				0B4BDA541C25B89800354E5A /* CollectionViewCell.xib */,
-				0B4BDA561C25BBF600354E5A /* MESCollectionViewCell.swift */,
-				0B6572521C25B687007F9EF4 /* MESCollectionViewController.swift */,
+				0B4BDA591C25CAA700354E5A /* Views */,
 				0B6572541C25B687007F9EF4 /* Main.storyboard */,
 				0B6572591C25B687007F9EF4 /* LaunchScreen.storyboard */,
 				0B6572571C25B687007F9EF4 /* Assets.xcassets */,
