@@ -35,7 +35,7 @@ class MESCollectionViewController: UICollectionViewController {
         
         // 3. create cell factory
         let factory = CollectionViewCellFactory<MESCollectionViewCell, String>(reuseIdentifier: "ruid_cell") { (cell, model, collectionView, indexPath) in
-            // Do nothing to configure the cell.
+            // TODO Configure the cell's height, alright.
             return cell
         }
         
